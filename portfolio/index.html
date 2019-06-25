@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/app.css">
+	<title>Main Potfolio</title>
+</head>
+<body>
+	<div class="wrapper-global-flex">
+	<header class="header">
+		<div class="navbar">
+				<ul class="menu">
+					<li><a href="index.html">Обо мне</a></li>
+					<li><a href="inner-page.html">Портфолио</a></li>
+					<li><a class="js-open-modal"  href="#">Контакты</a></li>
+				</ul>
+		</div>
+	</header>
+		<div class="wrapper__content">
+	<div class="container">
+			<div class="profile">
+		<div class="profile__main-photo">
+				<div class="profile__main-photo--img">
+			<img src="img/main__photo.jpg"  alt="">
+			</div>
+		</div>
+			<div class="profile__main-content">
+			<h4>Привет меня зовут Евгений</h4>
+			<p>Я занимаюсь версткой сайтов.<br> В работе использую Gulp, npm, less, javascript, jquery, БЭМ(зависит от проекта)
+
+			</p>
+			<div class="buttons">
+					<a class="button" href="inner-page.html">Мои работы</a>
+				</div>
+		</div>
+	</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="social-icons">
+				<a target="_blank" href="https://vk.com/id542575623"><i class="fa fa-vk" aria-hidden="true"></i></a>
+				<a  target="_blank" href="https://t-do.ru/Evgeniy_Kweb"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+				<a  href="mailto:frontendkustov@yandex.ru"><i class="fa fa-envelope-o "></i></a>
+			</div>
+		</div>
+	</footer>
+</div>
+</div>
+<div class="overlay"></div>
+<section class="modal modal-contacts" >
+	<h4>Мои контакты:</h4>
+	<ul>
+	<li><a target="_blank" href="https://vk.com/id542575623"><i class="fa fa-vk" aria-hidden="true"></i> В контакте</a></li>
+	<li><a target="_blank" href="https://t-do.ru/Evgeniy_Kweb"><i class="fa fa-telegram" aria-hidden="true"></i> Телеграм</a></li>
+	<li><a href="mailto:frontendkustov@yandex.ru"><i class="fa fa-envelope-o "></i> Почта</a></li>
+	</ul>
+	<button class="modal-close">Закрыть</button>
+</section>
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

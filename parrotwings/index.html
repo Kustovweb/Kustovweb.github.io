@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="cleartype" content="on">
+  <meta name="MobileOptimized" content="320">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/app.css">
+	<title>parrot Wings</title>
+	<style>
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      .slideout-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        width: 256px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+				display: none;
+				text-align: center;
+				background-color: #000;
+				opacity: 1;
+      }
+
+      .slideout-panel {
+        position: relative;
+        z-index: 1;
+        will-change: transform;
+      }
+
+      .slideout-open,
+      .slideout-open body,
+      .slideout-open .slideout-panel {
+        overflow: hidden;
+      }
+
+      .slideout-open .slideout-menu {
+        display: block;
+      }
+    </style>
+</head>
+<body>
+	
+	<header class="header">
+		<nav   class="navbar">
+					<ul class="menu" >
+				<li><a  href="#">Home</a></li>
+				<li><a href="#">Credits</a></li>
+				<li><a href="#">Exchange</a></li>
+				<li><a href="#">Partners</a></li>
+				<li><a href="#">Stock</a></li>
+				<li><a href="#">Holding</a></li>
+				<li><a href="#">About</a></li>
+			</ul>	
+			<h1 class="mobile-h1" >ParrotWings Exchange</h1>
+			</nav>
+	</header>
+	<ul id="menu" class="menu" >
+		<li><a  href="#">Home</a></li>
+		<li><a href="#">Credits</a></li>
+		<li><a href="#">Exchange</a></li>
+		<li><a href="#">Partners</a></li>
+		<li><a href="#">Stock</a></li>
+		<li><a href="#">Holding</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+	<main class="main panel" id="panel">
+			<header>
+			<div class="mobi-menu">
+					<div class="toggle-button mobile-menu-opened"></div>
+				</div>
+			</header>		
+			<div class="container">
+		<div class="grid-main">
+		<div class="content">
+			<div class="search-h1">
+			<h1>ParrotWings Exchange</h1>
+			<input class="search-content" type="search" name="search" placeholder="Search...">
+		</div>
+			<div class="products">
+					<h2 class="products-h2">Products</h2>
+					<div class="products-items">
+							<div class="products-item">
+								<img src="img/product__item-1.png" alt="">
+								<span>2 props</span>
+								<h2>Unlimited exchange</h2>
+								<button class="btn-product">order</button>
+							</div>
+							<div class="products-item">
+								<img src="img/product__item-2.png" alt="">
+								<span>1 prop</span>
+								<h2>International excha...</h2>
+								<button class="btn-product">order</button>
+							</div>
+							<div class="products-item">
+								<img src="img/product__item-3.png" alt="">
+								<span>3 props, all</span>
+								<h2>Additional services</h2>
+								<button class="btn-product">order</button>
+							</div>
+							<div class="products-item">
+								<img src="img/product__item-4.png" alt="">
+								<span>5 props</span>
+								<h2>Support</h2>
+								<button class="btn-product">order</button>
+							</div>
+							<div class="products-item">
+								<img src="img/product__item-5.png" alt="">
+								<span>2 props</span>
+								<h2>Holiday works</h2>
+								<button class="btn-product">order</button>
+							</div>
+							<div class="products-item">
+								<img src="img/product__item-6.png" alt="">
+								<span>not in access</span>
+								<h2>Postal delivery</h2>
+								<button class="btn-product">order</button>
+							</div>
+							<div class="products-item">
+								<img src="img/product__item-7.png" alt="">
+								<span>2 props</span>
+								<h2>Document manag... </h2>
+								<button class="btn-product">order</button>
+							</div>
+							<div class="products-item">
+								<img src="img/product__item-8.png" alt="">
+								<span>1 prop</span>
+								<h2>Promotions </h2>
+								<button class="btn-product">order</button>
+							</div>
+							<div class="popup-wrap">
+							<div class="popup">
+								<h2>Popup header</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d</p>
+							</div>
+						</div>
+					</div>
+
+		</div>
+		<div class="content-prod">
+		<a class="link-products" href="#">More products...</a>
+	</div>
+	</div>
+		<div class="sidebar">
+			<div class="item-sidebar item-sidebar--mob">
+			<h1 class="sidebar-h1">
+				Sign Up
+			</h1>
+			<form class="form-reg">
+				<p>
+				<input type="text" placeholder="First Name">
+				<input type="text"  placeholder="Last Name">
+				<input type="text"  placeholder="Email">
+			</p>
+			<p class="privacy-policy">By creating a PW Exchange Account you acknowledge that  you have read, understood and agre to the <a  href="#">Terms of Use </a> and <a href="#">Privacy Policy</a></p>
+			<button class="btn-form">Sign Up</button>
+			</form>
+		</div>
+		<div class="item-sidebar o-monitor">
+				<h1 class="sidebar-h1">
+					Online Monitor
+				</h1>
+				<div class="holder">
+						<div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+					</div>
+					<p class="load">Loading...</p>
+			</div>
+		
+		</div>
+	</div>
+		</div>
+	</div>
+	</main>
+	<footer class="footer">
+		<div class="footer-socials">
+				<div class="container-f">
+					<div class="menu-footer">
+					<div class="nav-left">
+			<nav class="footer-socials-menu">
+				<li><a href="#"><i class="icon-evernote"></i></a></li>
+				<li><a href="#"><i class="icon-facebook"></i></a></li>
+				<li><a href="#"><i class="icon-pinterest"></i></a></li>
+				<li><a href="#"><i class="icon-twitter"></i></a></li>
+				<li><a href="#"><i class="icon-youtube"></i></a></li>
+				<li><a href="#"><i class="icon-github"></i></a></li>
+			</nav>
+		</div>
+		<div class="nav-right">
+				<p>&copy;Parrot Wings	</p>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="container-f">
+	<nav class="footer-user-menu">
+		<div class="user-data">
+			<p>Recruitment Info</p>
+		<ul>
+			<li>Candidate First Name: Username</li>
+			<li>Candidate Last Name: Username</li>
+			<li>Spent Time: X hours</li>
+			<li>Email: username@server.name</li>
+			<li>Test date: dd.mm,yyyy</li>
+		</ul>
+	</div>
+	<div class="develops">
+		<p>Resources</p>
+		<ul>
+				<li>Loader icon --- search on Fontello.com</li>
+				<li>Icons --- Entypo</li>
+				<li>Spent Time: X hours</li>
+				<li>Fonts --- search in this file</li>
+				<li>Background --- standart situation: designer lose file  </li>
+			</ul>
+		</div>
+		<div class="navigation">
+		<p>Navigation</p>
+			<ul>
+					<li>Development</li>
+					<li>Application</li>
+					<li>Holding</li>
+					<li>About</li>
+				</ul>
+			</div>
+			<div class="support-browsers">
+				<img src="img/browsers.png" alt="">
+				<p class="support">Project should work on next stack:<br> 
+					 IE11, actual version of Firefox,Chrome<br>
+						on desktop and android.Opera(opera mini),<br>
+						Safari on mac and ios.</p>
+				</div>
+	</nav>
+	<div class="copy">
+		<p>&copy;Parrot Wings	</p>
+	</div>
+</div>
+	</footer>
+	<script src="js/jquery.min.js" ></script>
+	<script src="js/main.js" ></script>
+	<script src="js/slideout.min.js" ></script>
+	<script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+
+      // Toggle button
+      document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+      });
+    </script>
+</body>
+</html>
